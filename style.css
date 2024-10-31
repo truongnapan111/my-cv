@@ -27,6 +27,11 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+.col {
+    grid-template-columns: repeat(3, minmax(235px, 1fr));
+    ;
+}
+
 .gap-24 {
     gap: 24px;
 }
@@ -39,12 +44,20 @@ body {
     margin-top: 30px;
 }
 
+.mt--20 {
+    margin-top: -20px;
+}
+
 .mb-30 {
     margin-bottom: 30px;
 }
 
 .mb-45 {
     margin-bottom: 45px;
+}
+
+.mb--50 {
+    margin-bottom: -50px;
 }
 
 .p-30 {
@@ -58,6 +71,8 @@ body {
 .pt-45 {
     padding-top: 45px;
 }
+
+
 
 .pt-50 {
     padding-top: 50px;
@@ -91,10 +106,30 @@ body {
     padding-block: 50px;
 }
 
+.h-auto {
+    height: auto;
+}
+.line-height{
+    line-height: 30px;
+}
+.line-height20 {
+    line-height: 20px;
+}
 .title {
     font-size: 14px;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 20px;
+}
+
+.topic {
+    color: #afafaf;
+    font-size: 13px;
+}
+
+.date {
+    font-family: arial;
+    font-size: 11px;
+    color: #505050 !important;
 }
 
 .little-text {
@@ -676,6 +711,11 @@ footer .footer .copyright {
     padding: 15px;
 }
 
+.portfolio-item:hover {
+    box-shadow: 0 0 48px #04060414;
+    /* background-color: #fff; */
+}
+
 .portfolio-tag-active {
     color: #ffc500 !important;
 }
@@ -683,17 +723,15 @@ footer .footer .copyright {
 .portfolio img {
     border: 0;
     width: 100%;
-    border-radius: 8px 8px 0 0 ;
+    border-radius: 8px 8px 0 0;
     height: auto;
     display: block;
 }
 
-
-
 .portfolio figcaption {
     padding: 14px;
     background-color: #fff;
-    border-radius:  0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
 }
 
 .portfolio .title {
@@ -708,8 +746,9 @@ footer .footer .copyright {
     display: block;
 }
 
-.portfolio-wrapper-outer {
+.portfolio-wrapper {
     background-color: #fafafa;
+    border-radius: 8px;
 }
 
 .portfolio .icon i {
@@ -725,24 +764,33 @@ footer .footer .copyright {
     opacity: 0;
 }
 
-.portfolio a:hover .icon i{
+.portfolio a:hover .icon i {
     color: #fff;
-    opacity: 0.8;
+    opacity: 0.9;
     background: #FCD500;
     transform: translateY(-25px);
 }
-.portfolio-loadMore-button{
+
+.portfolio-loadMore-button {
     display: flex;
 }
-.portfolio-loadMore-button span{
+
+.portfolio-loadMore-button span {
     color: #000;
 }
-.portfolio-loadMore-button .portfolio-loadMore-link{
+
+.portfolio-loadMore-button .portfolio-loadMore-link {
     background-color: #ffc500;
 }
+
 .portfolio-loadMore-button .portfolio-loadMore-link:hover {
     background-color: #ecb500;
 }
+
+.blog {
+    box-shadow: 0 2px 92px #00000012;
+}
+
 /* Desktop */
 @media only screen and (min-width: 768px) {}
 
