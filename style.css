@@ -14,6 +14,7 @@ html {
 body {
     background-color: #f0f0f0;
     background-image: url('./asset/bg.280cef1c.png');
+    color: black;
 }
 
 .cursor {
