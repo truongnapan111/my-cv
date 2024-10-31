@@ -61,24 +61,24 @@
         </div>
         <div class="p-inline-12">
             <header class="header">
-                <div class="top-1">
-                    <a class="btn-top icon"><i class="fa fa-home"></i></a>
-                    <a class="btn-top">Resume</a>
-                    <a class="btn-top">PORTFOLIO</a>
-                    <a class="btn-top">BLOG</a>
-                    <a class="btn-top">CONTACT</a>
+                <div class="top-1 ">
+                    <a href="#" class="btn-top icon"><i class="fa fa-home"></i></a>
+                    <a href="#resume" class="btn-top hidden text-hover">Resume</a>
+                    <a href="#portfolio" class="btn-top hidden text-hover">PORTFOLIO</a>
+                    <a href="#blog" class="btn-top hidden text-hover">BLOG</a>
+                    <a href="#contact" class="btn-top hidden text-hover">CONTACT</a>
                 </div>
-                <div class="top-2">
+                <div class="top-2 ">
                     <a href="#" class="btn-top2 icon-hover"><i class="fa-brands fa-facebook-f icon-size cl-fb"></i></a>
                     <a href="#" class="btn-top2"><i class="fa-brands fa-twitter icon-size cl-tw"></i></a>
                     <a href="#" class="btn-top2"><i class="fa-brands fa-instagram icon-size cl-ins"></i></a>
                     <a href="#" class="btn-top2"><i class="fa-brands fa-dribbble icon-size cl-dr"></i></a>
                     <a href="#" class="btn-top2"><i class="fa-solid fa-bars "></i></a>
-                    <a href="#" class="btn-top2 btn-sent">Hire Me<i style="font-size: 10px;"
+                    <a href="#" class="btn-top2 btn-sent hidden">Hire Me<i style="font-size: 10px;"
                             class="fa-solid fa-paper-plane"></i></a>
                 </div>
             </header>
-            <main class="content">
+            <main id="" class="content">
                 <div class="content-about p-inline-30 pt-42 pb-45 ">
                     <div class="section-title">
                         <span></span>
@@ -111,7 +111,7 @@
                         <span></span>
                         <h2>My Services</h2>
                     </div>
-                    <div class="grid col-4 gap-24">
+                    <div class="grid col-4 gap-24 my-services col-mobile-sm">
                         <div class="service">
                             <div class="icon">
                                 <i class="flaticon-html"></i>
@@ -193,7 +193,7 @@
                         </ul>
                     </section>
                 </div>
-                <div class="content-resume">
+                <div id="resume" class="content-resume">
                     <div class="pb-45 ">
                         <div class="row">
                             <section class="education p-inline-30">
@@ -201,7 +201,7 @@
                                     <span></span>
                                     <h2>Resume</h2>
                                 </div>
-                                <div class="grid col-2 gap-24">
+                                <div class="grid col-2 gap-24 col-mobile-sm">
                                     <div class="pb-30">
                                         <ul class="timeline">
                                             <li>
@@ -295,7 +295,7 @@
                                     <span></span>
                                     <h2>Clients</h2>
                                 </div>
-                                <div class="clients grid col-4 gap-24">
+                                <div class="clients grid col-4 gap-24 col-mobile-sm">
                                     <div class="">
                                         <div class="client">
                                             <img src="./asset/image/client-01.476776c4.jpg" alt="">
@@ -325,7 +325,7 @@
                                     <span></span>
                                     <h2>Testimonials</h2>
                                 </div>
-                                <div class="slide grid col-3 gap-24">
+                                <div class="slide grid col-3 gap-24 col-mobile-sm">
                                     <div class="slide-item">
 
                                         <div class="comment">
@@ -411,7 +411,7 @@
                         </div>
                         <div class="portfolio">
                             <div class="portfolio-wrapper-outer">
-                                <div class="portfolio-wrapper grid col-3">
+                                <div class="portfolio-wrapper grid col-3 col-mobile-sm">
                                     <div class="portfolio-item webdesign">
                                         <div class="portfolio-item-wrapper">
                                             <a href="/" class="portfolio-singlePage">
@@ -567,7 +567,7 @@
                         </div>
                     </section>
                 </div>
-                <div id="portfolio" class="pb-45">
+                <div id="blog" class="pb-45">
                     <section class="p-inline-30">
                         <div class="content-header">
                             <div class="section-title mb-30 ">
@@ -577,7 +577,7 @@
                         </div>
                         <div class="portfolio">
                             <div class="portfolio-wrapper-outer ">
-                                <div class="portfolio-wrapper grid col-3">
+                                <div class="portfolio-wrapper grid col-3 col-mobile-sm">
                                     <div class="portfolio-item webdesign">
                                         <div class="portfolio-item-wrapper">
                                             <a href="/" class="portfolio-singlePage">
@@ -688,14 +688,14 @@
                         </div>
                     </section>
                 </div>
-                <div class="row">
-                    <div class="grid col-2 gap-24 p-inline-30">
-                        <section class="pb-45 pt-15">
+                <div id="contact" class="row">
+                    <div class="grid col-2 contact col-mobile-sm">
+                        <section class="pb-45 pt-15 p-inline-30">
                             <div class="mb-30 section-title mt-15"><span></span>
                                 <h2>Contact Form</h2>
                             </div>
                             <form class="site-form">
-                                <div class="grid col-2">
+                                <div class=" grid col-2 col-mobile-sm">
                                     <div class="p-inline-12"> <input class="site-input w-full" placeholder="Name">
                                     </div>
                                     <div class="p-inline-12"> <input class="site-input w-full" placeholder="E-mail">
@@ -707,7 +707,7 @@
                                 </div>
                             </form>
                         </section>
-                        <section class="pb-45 pt-15 contact-info">
+                        <section class="pb-45 pt-15 contact-info p-inline-30">
                             <div class="mb-30 section-title mt-15"><span></span>
                                 <h2>Contact Informations</h2>
                             </div>
@@ -752,6 +752,11 @@
             </footer>
         </div>
 
+    </div>
+    <div class="icon-fixed">
+        <a href="" class="setting">
+            <i class="fa fa-cog fa-spin"></i>
+        </a>
     </div>
 </body>
 
