@@ -8,11 +8,16 @@
 
 html {
     scroll-behavior: smooth;
+    color: black;
 }
 
 body {
     background-color: #f0f0f0;
     background-image: url('./asset/bg.280cef1c.png');
+}
+
+.cursor {
+    cursor: pointer;
 }
 
 .w-full {
@@ -149,7 +154,7 @@ body {
 .title {
     font-size: 14px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 30px;
 }
 
 .topic {
@@ -294,7 +299,7 @@ body {
 .profile-infor {
     list-style: none;
     position: relative;
-    padding-left: 30px;
+    padding-left: 26px;
     /* border-left: 2px solid #e0e0e0; */
 }
 
@@ -306,8 +311,8 @@ body {
 }
 
 .sessions li {
-    padding-bottom: 1.15rem;
-    border-left: 1px solid;
+    padding-bottom: 1.25rem;
+    border-left: 1px solid #eee;
     position: relative;
     padding-left: 20px;
     margin-left: 10px;
@@ -421,7 +426,7 @@ body {
     background-color: #ffc500;
     margin-right: 10px;
     padding: 0 24px;
-    font-size: medium;
+    font-size: 17.5px;
 }
 
 .top-1 .icon:hover {
@@ -444,14 +449,14 @@ body {
 .btn-sent {
     background-color: #ffc500;
     border-radius: 50px;
-    text-transform: none;
-    min-width: 120px;
+    /* min-width: 120px; */
     font-size: 14px;
     font-weight: 500;
-    text-decoration: none;
     display: flex;
-    padding-inline: 0px;
-    padding: 5px;
+    height: 37px;
+    /* padding-inline: 0px; */
+    padding: 1px 6px 1px 19px;
+    ;
     align-items: center;
     justify-content: end;
     margin-right: -6px;
@@ -468,6 +473,8 @@ body {
     background-color: #fff;
     border-radius: 50px;
     padding: 9px;
+    text-align: center;
+    font-size: 11px;
 }
 
 .icon-size {
@@ -606,14 +613,15 @@ ul.profile-information li:before {
     background: #fff;
     border: 2px solid;
     border-radius: 50px;
-    width: 8px;
-    height: 8px;
+    width: 4px;
+    height: 4px;
     margin-top: -1px;
     margin-left: -35px;
     font-size: 8px;
     font-weight: 400;
     display: block;
     position: absolute;
+    border-color: #ffb100 !important;
 }
 
 .timeline-title {
@@ -650,6 +658,7 @@ ul.profile-information li:before {
     font-size: 12px;
     display: block;
     color: #000;
+    height: 36px;
 }
 
 .timeline-title {
@@ -760,6 +769,7 @@ footer .footer .copyright {
 .portfolio-item:hover {
     box-shadow: 0 0 48px #04060414;
     /* background-color: #fff; */
+    border-radius: 10px;
 }
 
 .portfolio-tag-active {
@@ -856,7 +866,7 @@ footer .footer .copyright {
     margin-bottom: 15px;
     padding: 20px 0 0 10px;
     font-size: 13px;
-    max-width: 330px;
+    max-width: 130%;
 }
 
 .submit-btn {
@@ -868,6 +878,7 @@ footer .footer .copyright {
     font-weight: 500;
     line-height: 35px;
     background-color: #ffc500;
+    cursor: pointer;
 }
 
 .contact-info ul li {
@@ -937,6 +948,7 @@ footer .footer .copyright {
     .container {
         display: block;
         max-width: 540px;
+        margin-top: 30px;
     }
 
     .col-mobile-sm {
@@ -956,8 +968,6 @@ footer .footer .copyright {
         /* row-gap: 12px; */
     }
 
-
-
     .portfolio-wrapper {
         grid-template-columns: 1fr 1fr;
     }
@@ -966,13 +976,20 @@ footer .footer .copyright {
         display: none;
     }
 
+    .profile .name {
+        font-size: 20px;
+    }
+
+    .portfolio .icon i {
+        margin: 80px 70px;
+    }
 }
 
 @media only screen and (max-width:576px) {
 
     .container {
         display: block;
-
+        margin-top: 30px;
     }
 
     .col-mobile-sm,
@@ -987,6 +1004,10 @@ footer .footer .copyright {
 
     .header .hidden {
         display: none;
+    }
+
+    .profile .name {
+        font-size: 20px;
     }
 }
 
