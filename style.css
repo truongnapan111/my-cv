@@ -11,6 +11,10 @@ body {
     background-image: url('./asset/bg.280cef1c.png');
 }
 
+.w-full {
+    width: 100%;
+}
+
 .grid {
     display: grid;
 }
@@ -32,6 +36,10 @@ body {
     ;
 }
 
+.col-to2 {
+    grid-column: 1 / span 2;
+}
+
 .gap-24 {
     gap: 24px;
 }
@@ -48,6 +56,12 @@ body {
     margin-top: -20px;
 }
 
+.mt-15 {
+    margin-top: 15px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
 .mb-30 {
     margin-bottom: 30px;
 }
@@ -62,6 +76,14 @@ body {
 
 .p-30 {
     padding: 30px;
+}
+
+.pt-15 {
+    padding-top: 15px;
+}
+
+.pt-30 {
+    padding-top: 30px;
 }
 
 .pt-42 {
@@ -109,12 +131,15 @@ body {
 .h-auto {
     height: auto;
 }
-.line-height{
+
+.line-height {
     line-height: 30px;
 }
+
 .line-height20 {
     line-height: 20px;
 }
+
 .title {
     font-size: 14px;
     font-weight: 500;
@@ -141,7 +166,7 @@ body {
 
 /* BUTTON */
 .site-btn {
-    display: block;
+    display: flex;
     margin: 18px auto 30px;
     border: 0;
     border-radius: 50px;
@@ -149,8 +174,13 @@ body {
     font-size: 14px;
     font-weight: 500;
     line-height: 35px;
+    background-color: #ffc500;
+    cursor: pointer;
+    justify-content: center;
 }
-
+.site-btn:hover{
+    background-color: #ffb100;
+}
 .btn-top {
     color: #000;
     padding: 0 10px;
@@ -415,7 +445,9 @@ body {
     margin-right: -6px;
     margin-left: 4px;
 }
-
+.btn-sent:hover {
+    background-color: #ffb100 !important;
+}
 .btn-sent i {
     color: #000;
     margin-left: 15px;
@@ -789,6 +821,47 @@ footer .footer .copyright {
 
 .blog {
     box-shadow: 0 2px 92px #00000012;
+}
+
+.site-input {
+    color: #000;
+    border: 0;
+    border-bottom: 1px solid #dfdfdf;
+    outline: 0;
+    height: 45px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.site-form .site-area {
+    border: 0;
+    border-bottom: 1px solid #dfdfdf;
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 15px;
+    padding: 20px 0 0 10px;
+    font-size: 13px;
+}
+
+.submit-btn {
+    margin: 15px auto 30px;
+    border: 0;
+    border-radius: 50px;
+    padding: 1px 29px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 35px;
+    background-color: #ffc500;
+}
+.contact-info ul li {
+    color: #787878;
+    font-size: 14px;
+    line-height: 34px;
+    list-style: none;
+}
+.contact-info ul li span {
+    color: #000;
 }
 
 /* Desktop */
